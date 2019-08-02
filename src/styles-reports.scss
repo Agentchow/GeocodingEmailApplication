@@ -1,0 +1,251 @@
+.report-component-container {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 20px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    .report-header-area {
+
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        justify-content: space-between;
+
+        h2, h3, h4, h5 {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .report-header {
+        }
+
+        .info-text {
+            max-width: 300px;
+            justify-content: flex-end;
+            align-items: center;
+            color: gray;
+            font-style: italic;
+        }
+    }
+
+    .report-controls-area {
+        // margin-bottom: 30px;
+    }
+
+    .report-form-row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .button {
+        margin-left: 15px;
+    }
+
+
+    moveme-report-content {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .report-content-area {
+
+        box-sizing: border-box;
+        height: 100%;
+        // margin-top: 15px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        display: flex;
+        flex-direction: column;
+
+        .content-controls {
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .content-display {
+
+            flex: 1;
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: 15px;
+
+            body {
+                font-family: sans-serif;
+            }
+
+            p {
+                margin-bottom: 15px;
+                margin-top: 5px;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            th {
+                border: 1px solid black;
+                padding: 5px;
+                padding-bottom: 2px;
+                padding-top: 2px;
+            }
+
+            td {
+                border: 0px solid black;
+                padding: 5px;
+                padding-bottom: 2px;
+                padding-top: 2px;
+                vertical-align: text-top;
+            }
+
+            td.bottom-border {
+                border-bottom: 1px solid black;
+            }
+
+            .footer {
+                margin-top: 30px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+            .reports-header-movee-details {
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                justify-content: space-between;
+                border-top: 1px solid black;
+                padding-top: 10px;
+            }
+
+            .reports-header-name-block {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .reports-header-name-block .field-name {
+                margin-top: 5px;
+                margin-right: 10px;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .reports-header-name-block .field-value {
+                margin-top: 5px;
+                margin-right: 20px;
+                text-align: left;
+            }
+
+            .reports-header-from-to-block {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .reports-header-from-to-block .field-name {
+                margin-top: 5px;
+                margin-right: 10px;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .reports-header-from-to-block .field-value {
+                margin-top: 5px;
+                margin-right: 20px;
+                text-align: left;
+            }
+
+            .reports-header-mo-details {
+                display: flex;
+                flex-direction: row;
+                padding-top: 5px;
+            }
+
+            .reports-header-mo-details .field-name {
+                margin-top: 5px;
+                margin-right: 10px;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .reports-header-mo-details .field-value {
+                margin-top: 5px;
+                margin-right: 10px;
+                text-align: left;
+            }
+
+            
+            .reports-header-mc-details {
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                justify-content: space-between;
+                padding-top: 5px;
+            }
+
+            .reports-header-mc-details .field-name {
+                margin-top: 5px;
+                margin-right: 10px;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .reports-header-mc-details .field-value {
+                margin-top: 5px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            .reports-comp-table-summary-statement {
+                font-weight: bold;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .comp-report-data {
+                table-layout: fixed;
+                width: 80%;
+                // white-space: nowrap;
+              }
+
+            .comp-report-data td {
+            // white-space: nowrap;
+            overflow: hidden;
+            // text-overflow: ellipsis;
+            }
+
+            /* Column widths are based on these cells */
+            .col-description{
+                width: 35%;
+            }
+            .col-assetTag-quantity {
+                width: 15%;
+            }
+            .col-action {
+                width: 20%;
+            }
+            .col-from {
+                width: 15%;
+            }
+            .col-to {
+                width: 15%;
+            }
+
+            .tableGroup {
+                margin-bottom: 15px;
+            }
+
+        }
+
+    }
+
+}

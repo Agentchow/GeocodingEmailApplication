@@ -1,0 +1,236 @@
+// Import the Material theme functions
+@import '~@angular/material/theming';
+// Import the application theme, so we have access to the colors and mixins defined in it
+@import 'theme.scss';
+
+// Set box sizing to border-box (widths and heights include border and padding)
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// Allow elements to set their own box sizing model
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+// Explicit height and margin on html and body for full screen app sizing
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+// Default font
+body {
+    font-family: Roboto, Muli, 'Segoe UI', Tahoma, sans-serif;
+}
+
+// Overrides to Angular Material defaults, adapted from Teradata Covalent.
+// (Nesting under html so CSS specificity wins over Material's defaults.)
+html {
+
+    .mat-sidenav-container {
+        background-color: mat-color($app-neutral, lighter); // this does not play well with dark theme, is there a better way?
+
+        .mat-sidenav {
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+
+            > .mat-toolbar {
+                height: 55px;
+                margin-bottom: 3px;
+                box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3);
+
+                > h2 {
+                    font-size: 18px;
+                }
+            }
+
+            .mat-list-item-content .mat-icon {
+                margin-right: 10px;
+                color: mat-color($app-neutral, 900);
+            }
+
+        }
+    }
+
+    .mat-card {
+        margin: 12px;
+        padding: 14px;
+
+        .mat-card-actions {
+            margin-left: 0;
+            margin-right: 0;
+            padding-bottom: 3px;
+        }
+
+        > .mat-card-actions:last-child {
+            margin-bottom: 0;
+            padding-bottom: 3px;
+        }
+    }
+
+}
+
+.debug-text,
+.monospace {
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+.mat-expansion-panel.override-padding .mat-expansion-panel-header {
+    padding: 0;
+}
+.mat-expansion-panel.override-padding .mat-expansion-panel-body {
+    padding: 0;
+}
+
+
+snack-bar-container.mat-snack-bar-container.snackbar-toaster {
+    padding: 0;
+}
+
+
+mat-nav-list a.mat-list-item.active-route {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+mat-nav-list a.mat-list-item.active-route.mat-list-item-focus {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+mat-nav-list a.mat-list-item.active-route:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+.completed {
+    color: #419f31;
+}
+.not-completed {
+    color: #ef7b00;
+}
+.error {
+    color: red;
+}
+
+
+form.inline-form > mat-form-field + mat-form-field {
+    margin-left: 18px;
+}
+
+
+.dark-blue {
+    color: rgb(17, 53, 106);
+}
+.medium-blue {
+    color: rgb(59, 89, 133);
+}
+.light-blue {
+    color: rgb(46, 91, 163);
+}
+.emphasis-blue {
+    color: rgb(64, 124, 213);
+}
+
+
+a.hover-blue:hover {
+    color: rgb(46, 91, 163);
+}
+
+.pre-line {
+    white-space: pre-line;
+}
+
+.callout {
+    white-space: pre-line;
+    font-size: 13px;
+}
+
+
+.flush-top {
+    margin-top: 0;
+}
+
+
+.mat-tab-group.flex {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .mat-tab-body-wrapper {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        .mat-tab-body {
+            flex: 1;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.mat-button-toggle-group.compact.mat-button-toggle-vertical {
+    button {
+        text-align: left;
+    }
+}
+
+
+.progress-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+    background-color: rgba(240, 240, 240, 0.411);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hover-cursor {
+    cursor: pointer;
+}
+
+.inline-icons .mat-icon {
+    vertical-align: middle;
+}
+
+
+.mat-expansion-panel.flex {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .mat-expansion-panel-content {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        .mat-expansion-panel-body {
+            flex: 1;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    }
+}
+
+.gray {
+    color: gray;
+}
+
+.italic {
+    font-style: italic;
+}

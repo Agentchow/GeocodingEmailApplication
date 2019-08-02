@@ -1,0 +1,45 @@
+@import '~@angular/material/theming';
+@import 'src/theme.scss';
+
+// use icons from the theme
+$icons-path: "~ag-grid-community/src/styles/ag-theme-balham/icons/";
+
+// // NOTE: icon colors do not seem to work.
+// $icon-color: mat-color($app-primary);     // default icon color
+// $alt-icon-color: mat-color($app-accent);  // icon secondary color (checkbox background)
+// $accent-color: #FFFFF1;             // selected checkbox check mark color
+
+@import '~ag-grid-community/src/styles/ag-grid.scss';
+@import '~ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham.scss';
+
+
+
+// Global grid customizations
+
+.ag-root {
+
+    // .grid-icon-button {
+    //     border: none;
+    //     background-color: unset;
+    //     padding: 0;
+    // }
+
+    .trailing-icon {
+        padding-left: 8px;
+    }
+
+}
+
+
+// Theme-specific customizations
+
+.ag-theme-balham {
+
+    // font-family: 'Roboto', 'Muli', 'Segoe UI', Tahoma, sans-serif;
+
+    .ag-header {
+        font-family: 'Roboto', 'Muli', 'Segoe UI', Tahoma, sans-serif;
+    }
+
+}
+

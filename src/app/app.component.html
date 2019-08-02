@@ -1,8 +1,49 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/SAS_logo_horiz.svg/1280px-SAS_logo_horiz.svg.png">
+    <h1>
+      Welcome to {{ title }}
+    </h1>
+    <img width="150" alt="Angular Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/SAS_logo_horiz.svg/1280px-SAS_logo_horiz.svg.png">
+</div>
+  
+  
+<div class="app-container">
+
+  <mat-toolbar class="app-toolbar" color="primary">
+
+      <span class="toolbar-left">
+
+          <span class="clickable">Easy Email</span> 
+
+          <span class="toolbar-menus">
+
+              
+              <mat-form-field>
+                <mat-select placeholder = "Filter by Proximity (miles)" [(value)]="selected">
+                  <mat-option *ngFor="let mile of miles" [value]="mile.value">
+                    {{mile.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <a mat-button color = "primary">Moves</a>
+              <a mat-button>Events</a>
+          </span>
+
+      </span>
+
+  </mat-toolbar>
+
+  <div class="app-content">
+
+      <div class="progress-overlay">
+          <mat-spinner></mat-spinner>
+      </div>
+
+  </div>
+
 </div>
 
+
+
+  
+  
