@@ -24,7 +24,7 @@ export class AppComponent {
   ];
 
   rowData = [
-    { name: 'John', email: 'JohnDoe@sas.com', location: '1234 Sesame Stret', position: 'Manager'},
+    { name: 'John', email: 'JohnDoe@sas.com', location: '1234 Sesame Street', position: 'Manager'},
     { name: 'Susan', email: 'SusansSmith@sas.com', location: '401 Generic Road', position: 'Director'},
     { name: 'Charles', email: 'CharlesChow@sas.com', location: '377 MLK St', position: 'Developer'},
 
