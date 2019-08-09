@@ -11,4 +11,4 @@ import { AgGridModule } from 'ag-grid-angular';
     declarations: [],
     providers: [],
 })
-export class GridsModule { }
+export class GridsModule {}

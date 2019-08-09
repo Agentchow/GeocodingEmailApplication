@@ -1,3 +1,9 @@
+@import '~ag-grid-community/src/styles/ag-grid.scss';
+@import '~ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham.scss';
+
+//@import "~ag-grid/dist/styles/ag-grid.css";
+//@import "~ag-grid/dist/styles/ag-theme-balham.css";
+
 .app-container {
     margin: 0;
     padding: 0;
@@ -11,7 +17,6 @@
 
 .app-toolbar {
     justify-content: space-between;
-
     .toolbar-left {
         .toolbar-menus {
             margin-left: 110px;

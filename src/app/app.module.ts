@@ -5,8 +5,11 @@ import { MatButtonModule } from '@angular/material';
 import { MatProgressSpinnerModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material';
+import { MatCheckboxModule } from '@angular/material';
 
 import { GridsModule } from './grids/grids.module';
+import { AgGridModule } from 'ag-grid-angular';
+
 
 import { AppComponent } from './app.component';
 
@@ -22,6 +25,8 @@ import { AppComponent } from './app.component';
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
     MatSelectModule,
+    MatCheckboxModule,
+    AgGridModule.withComponents([AppComponent]),
   ],
   providers: [
     //   MatIconRegistry,
